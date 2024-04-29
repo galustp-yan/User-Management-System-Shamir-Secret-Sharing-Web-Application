@@ -1,0 +1,88 @@
+body {
+    font-family: 'Arial', sans-serif;
+    margin: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    background-color: #f4f4f4;
+  }
+  
+  .container {
+    background-color: #fff;
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    padding: 20px;
+    width: 300px;
+    text-align: center;
+  }
+  
+  #createAccountForm , #signInForm {
+    display: flex;
+    flex-direction: column;
+  }
+  
+  label {
+    margin-top: 10px;
+  }
+  
+  input {
+    padding: 8px;
+    margin-top: 5px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+  }
+  
+  button {
+    background-color: #4caf50;
+    color: white;
+    padding: 10px;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    margin-top: 15px;
+  }
+  
+  button:hover {
+    background-color: #45a049;
+  }
+  
+/* ??????????????????????????? */
+#togle {
+  display: flex;
+  align-items: center;
+  position: relative;
+}
+
+
+#togle input {
+  /* padding: 8px; */
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  width: 100%;
+}
+
+#togleButton {
+  background: none;
+  border: none;
+  cursor: pointer;
+  position: absolute;
+  right: 0;
+}
+
+#toggleImage {
+  width: 20px;
+  height: 20px;
+}
+
+#togleButton:hover #toggleImage {
+  filter: brightness(0.8); /* Add a hover effect to the image */
+}
+
+#togleButton:focus {
+  outline: none; /* Remove the default focus outline */
+}
+
+#togleButton:active {
+  transform: scale(0.95); /* Add a click effect to the button */
+}

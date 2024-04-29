@@ -1,0 +1,95 @@
+body {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f9f9f9;
+}
+
+.user-cabinet {
+    max-width: 600px;
+    margin: 50px auto;
+    background-color: #fff;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+h2 {
+    color: #333;
+    text-align: center;
+}
+
+.user-info {
+    margin-top: 20px;
+    padding: 10px;
+    border-bottom: 1px solid #ddd;
+}
+
+.user-info p {
+    margin: 8px 0;
+}
+
+.secret-key {
+    margin-top: 20px;
+    padding: 10px;
+    border-bottom: 1px solid #ddd;
+}
+
+.secret-key p {
+    margin: 8px 0;
+}
+
+#secretKey {
+    font-family: 'Courier New', Courier, monospace;
+    word-wrap: break-word;
+    white-space: pre-wrap;
+}
+
+.secret-key button {
+    margin-right: 10px;
+    background-color: #3498db;
+    color: #fff;
+    padding: 8px 12px;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    font-size: 14px;
+}
+
+.secret-key button:hover {
+    background-color: #2980b9;
+}
+
+.logout-btn {
+    background-color: #e74c3c;
+    color: #fff;
+    padding: 10px 15px;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    font-size: 16px;
+}
+
+.logout-btn:hover {
+    background-color: #c0392b;
+}
+
+#secretKey {
+    display: none;
+}
+
+#accept {
+    background-color: green;
+}
+
+#accept:hover {
+    background-color: rgba(0, 128, 0, 0.8);
+}
+
+#cancel {
+    background-color: rgb(15, 18, 15);
+}
+
+#cancel:hover {
+    background-color: rgba(15, 18, 15, 0.8);
+}

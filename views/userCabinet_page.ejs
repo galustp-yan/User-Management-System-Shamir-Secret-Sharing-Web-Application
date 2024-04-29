@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="public/css/userCabinetStyles.css">
+    <link rel="icon" type="image/png" href="public\images\hashing-algorithm-1.png">
+
+    <script src="https://code.jquery.com/jquery-3.6.4.min.js"></script>
+    <title>User Cabinet</title>
+</head>
+<body>
+    <div class="user-cabinet">
+        <h2>Welcome to Your User Cabinet</h2>
+        <div class="user-info">
+            <p><strong >FirstName:</strong> <label id="firstName"> JohnDoe </label></p>
+            <p><strong >LastName:</strong> <label id="lastName"> johndoe@example.com </label></p>
+        </div>
+        <div class="secret-key">
+            <p><strong>Secret Key:</strong> <span id="secretKey" >801b5edad282bf322b44dfdace304c52e9ec09ca9c06d553528a3c85c29981872b2767f76fb375083f26383676e1854352c3bc0fd4cafa6c827933f509c0f451f5ee08ca2e82529e43b2d64ae9fd7713780a8b719c6ec16c1880f5a07af17e18017a00720463b2dd2b2c257973c428f7a563f4cb90b1f8f82aa43b1ebada5dc3547</span></p>
+            <button onclick="toggleSecretKeyVisibility()">Toggle Secret Key Visibility</button>
+            <button onclick="copySecretKey()">Copy Secret Key</button>
+            <button onclick="acceptKey()" id="accept"> Accsept</button>
+            <button onclick="cancelKey()" id="cancel"> Cancel</button>
+        </div>
+        <button class="logout-btn" onclick="logOutUser()">Logout</button>
+    </div>
+
+    <script src="public/js/usrCabinet_script.js"></script>
+</body>
+</html>
