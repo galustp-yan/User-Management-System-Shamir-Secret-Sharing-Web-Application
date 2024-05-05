@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -7,42 +8,47 @@
   <link rel="stylesheet" href="public/css/styles.css">
   <link rel="icon" type="image/png" href="public\images\hashing-algorithm-1.png">
   <script src="https://code.jquery.com/jquery-3.6.4.min.js"></script>
- 
+  <script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-2177524978425893"
+    crossorigin="anonymous"></script>
+
+
 </head>
+
 <body>
 
-<div class="container">
-  <div id="createAccountForm" >
-    <h2>Create Account</h2>
-    
-    <label for="firstName">First Name:</label>
-    <input type="text" id="firstName" name="firstName" oninput="capitalizeInput('firstName')" required>
+  <div class="container">
+    <div id="createAccountForm">
+      <h2>Create Account</h2>
 
-    <label for="lastName">Last Name:</label>
-    <input type="text" id="lastName" name="lastName" oninput="capitalizeInput('lastName')" required>
+      <label for="firstName">First Name:</label>
+      <input type="text" id="firstName" name="firstName" oninput="capitalizeInput('firstName')" required>
 
-    <label for="newUsername">UserName:</label>
-    <input type="text" id="newUsername" name="newUsername" required>
-    
-   
+      <label for="lastName">Last Name:</label>
+      <input type="text" id="lastName" name="lastName" oninput="capitalizeInput('lastName')" required>
+
+      <label for="newUsername">UserName:</label>
+      <input type="text" id="newUsername" name="newUsername" required>
+
+
       <label for="newPassword">Password:</label>
       <div id="togle">
 
         <input type="password" id="newPassword" name="newPassword" required>
         <button id="togleButton" onclick="togglePasswordVisibility()">
           <img id="toggleImage" src="public/images/show.png" alt="Show Password">
-        </button>  
+        </button>
       </div>
 
-    <label for="confirmPassword">Confirm Password:</label>
-    <input type="password" id="confirmPassword" name="confirmPassword" required>
+      <label for="confirmPassword">Confirm Password:</label>
+      <input type="password" id="confirmPassword" name="confirmPassword" required>
 
-    <button type="button" onclick="createAccount()">Create Account</button>
+      <button type="button" onclick="createAccount()">Create Account</button>
     </div>
 
-  <p>Already have an account? <a href="signIn_page">Sign In</a></p>
-</div>
+    <p>Already have an account? <a href="signIn_page">Sign In</a></p>
+  </div>
 
-<script src="public/js/createScript.js"></script>
+  <script src="public/js/createScript.js"></script>
 </body>
+
 </html>
