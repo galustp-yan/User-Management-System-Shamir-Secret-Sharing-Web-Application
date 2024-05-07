@@ -56,6 +56,14 @@ h2 {
     font-size: 14px;
 }
 
+@media screen and (max-width: 586px) {
+    .secret-key button {
+        margin-bottom: 5px;
+        width: 100%;
+    }
+}
+
+
 .secret-key button:hover {
     background-color: #2980b9;
 }

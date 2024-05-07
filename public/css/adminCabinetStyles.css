@@ -14,6 +14,7 @@ body {
     box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
     /* text-align: center; */
 }
+
 .container:first-child {
     text-align: center;
 }
@@ -72,29 +73,30 @@ button:hover {
 textarea {
     /* width: 300px;  */
     width: 80%;
-    resize: none; /* Prevent users from resizing the textarea */
+    resize: none;
+    /* Prevent users from resizing the textarea */
 }
 
 /* Additional styles for the user section */
 .user-section {
     margin-top: 20px;
-  }
-  
-  .user-section h2 {
+}
+
+.user-section h2 {
     color: #007bff;
-  }
-  
-  .user-section ul {
+}
+
+.user-section ul {
     list-style-type: none;
     padding: 0;
-  }
-  
-  .user-section li {
+}
+
+.user-section li {
     margin-bottom: 10px;
     color: #333;
-  }
-  
-  .generated {
+}
+
+.generated {
     max-width: 100%;
     max-height: 360px;
     overflow-wrap: break-word;
@@ -135,7 +137,8 @@ textarea {
     position: fixed;
     top: 5%;
     right: 7%;
-    background-color: #007bff; /* Green */
+    background-color: #007bff;
+    /* Green */
     border: none;
     color: white;
     padding: 15px 32px;
@@ -145,19 +148,45 @@ textarea {
     cursor: pointer;
     transition: all 0.3s ease, transform 0.3s ease;
     border-radius: 10px;
-  }
-  
-  .button-verified-keys:hover {
-    background-color: #2f80a8; /* Darker green on hover */
-    transform: scale(1.03); /* Scale up on hover */
-    /* color: #271e1f; */
-  }
-  
-  .logOut {
+}
+
+@media screen and (max-width: 1439px) {
+    .button-verified-keys {
+        right: 5%;
+    }
+}
+
+@media screen and (max-width: 1375px) {
+    .button-verified-keys {
+        right: 3%;
+    }
+}
+
+@media screen and (max-width: 1319px) {
+
+    #mainButtons .button-verified-keys,
+    #mainButtons .logOut {
+        position: inherit;
+        width: 100%;
+        margin-bottom: 5px;
+        display: block;
+        padding: 10px 0;
+    }
+}
+
+.button-verified-keys:hover {
+    background-color: #2f80a8;
+    /* Darker green on hover */
+    transform: scale(1.03);
+    /* Scale up on hover */
+}
+
+.logOut {
     position: fixed;
     top: 5%;
     left: 7%;
-    background-color: #ff2f00; /* Green */
+    background-color: #ff2f00;
+    /* Green */
     border: none;
     color: white;
     padding: 15px 32px;
@@ -167,12 +196,13 @@ textarea {
     cursor: pointer;
     transition: all 0.3s ease, transform 0.3s ease;
     border-radius: 10px;
-  }
-  
-  .logOut:hover {
-    background-color: #e44c49; /* Darker green on hover */
-    transform: scale(1.03); /* Scale up on hover */
+}
+
+
+.logOut:hover {
+    background-color: #e44c49;
+    /* Darker green on hover */
+    transform: scale(1.03);
+    /* Scale up on hover */
     /* color: #271e1f; */
-  }
-  
-  
+}
